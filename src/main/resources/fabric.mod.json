@@ -14,7 +14,7 @@
       "com.client.hbmkotlinClient"
     ],
     "main": [
-      "com.hbmkotlin"
+      "com.hbmkotlin.hbmkotlin"
     ]
   },
   "mixins": [
