@@ -1,0 +1,14 @@
+{
+  "uu_unthem": {
+    "subtitle": "subtitles.hbmkotlin.uu_anthem",
+    "sounds": [
+      "alarm/uu_anthem"
+    ]
+  },
+  "air_raid": {
+    "subtitle": "subtitles.hbmkotlin.air_raid",
+    "sounds": [
+      "alarm/airRaid"
+    ]
+  }
+}

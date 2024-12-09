@@ -1,5 +1,5 @@
 package com.hbmkotlin.modblocks
 
-class Blocks {
+object Blocks {
 
 }

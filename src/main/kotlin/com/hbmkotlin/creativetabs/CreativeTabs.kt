@@ -11,7 +11,6 @@ import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 
 object CreativeTabs {
-    // Создание ключей для групп предметов
     val HBM_BLOCKS: RegistryKey<ItemGroup> = RegistryKey.of(
         Registries.ITEM_GROUP.key,
         Identifier("hbmkotlin", "hbm_blocks_tab")
@@ -23,7 +22,7 @@ object CreativeTabs {
     )
 
     fun register() {
-        // Регистрация вкладки HBM_BLOCKS
+        // HBM_BLOCKS tab register
         Registry.register(
             Registries.ITEM_GROUP,
             HBM_BLOCKS.value, // Используем значение идентификатора
@@ -31,14 +30,14 @@ object CreativeTabs {
                 .icon { ItemStack(Items.DIAMOND) } // Иконка вкладки
                 .displayName(Text.translatable("itemGroup.hbmkotlin.hbm_blocks_tab")) // Название вкладки
                 .entries { _, entries ->
-                    // Добавление предметов
+                    // Items/blocks
                     entries.add(ItemStack(Items.DIAMOND))
                     entries.add(ItemStack(Items.GOLD_INGOT))
                 }
                 .build()
         )
 
-        // Регистрация вкладки HBM_MACHINES
+        // HBM_MACHINES tab register
         Registry.register(
             Registries.ITEM_GROUP,
             HBM_MACHINES.value,
@@ -48,7 +47,7 @@ object CreativeTabs {
                 .entries { _, entries ->
                     entries.add(ItemStack(Items.DIRT))
                 }
-                .build() // Обязательно вызываем build()
+                .build()
         )
     }
 }
