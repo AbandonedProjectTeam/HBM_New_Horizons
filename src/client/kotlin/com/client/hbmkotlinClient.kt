@@ -15,6 +15,7 @@ class hbmkotlinClient : ClientModInitializer {
             if (isFirstLoad && client.currentScreen is TitleScreen) {
                 isFirstLoad = false
                 handleCustomMenu(client)
+
             }
         }
     }
