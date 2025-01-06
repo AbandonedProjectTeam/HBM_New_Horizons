@@ -40,6 +40,10 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+    mavenCentral() // For Gson
+    maven { url = uri("https://maven.fabricmc.net/") } // For Fabric
+    maven { url = uri("https://maven.minecraftforge.net/") }
+
 }
 
 dependencies {
@@ -52,7 +56,11 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.property("fabric_version")}")
 
-    implementation("com.google.code.gson:gson:2.10.1")
+    constraints {
+        implementation("com.google.code.gson:gson:2.10.1") {
+            because("Ensure consistent Gson version")
+        }
+    }
 }
 
 tasks.processResources {

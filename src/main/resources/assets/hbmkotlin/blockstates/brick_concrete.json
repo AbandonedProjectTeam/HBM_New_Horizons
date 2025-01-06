@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "hbmkotlin:block/brick_concrete" }
+  }
+}

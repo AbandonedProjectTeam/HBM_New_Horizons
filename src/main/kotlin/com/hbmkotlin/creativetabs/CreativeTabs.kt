@@ -27,12 +27,11 @@ object CreativeTabs {
             Registries.ITEM_GROUP,
             HBM_BLOCKS.value, // Используем значение идентификатора
             FabricItemGroup.builder()
-                .icon { ItemStack(Items.DIAMOND) } // Иконка вкладки
+                .icon { ItemStack(com.hbmkotlin.modItems.Items.BRICK_CONCRETE_ITEM) } // Иконка вкладки
                 .displayName(Text.translatable("itemGroup.hbmkotlin.hbm_blocks_tab")) // Название вкладки
                 .entries { _, entries ->
-                    // Items/blocks
-                    entries.add(ItemStack(Items.DIAMOND))
-                    entries.add(ItemStack(Items.GOLD_INGOT))
+                    // Items/block
+                    entries.add(com.hbmkotlin.modItems.Items.BRICK_CONCRETE_ITEM)
                 }
                 .build()
         )
