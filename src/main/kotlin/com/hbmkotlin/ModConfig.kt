@@ -26,7 +26,7 @@ data class ModConfigData(
 )
 
 object  ModConfig {
-    private val configFile = File("config/hbm.json")
+    private val configFile = File("config/hbmkotlin.json")
     private val gson: Gson = GsonBuilder().setPrettyPrinting().create()
     var config: ModConfigData = ModConfigData()
 
